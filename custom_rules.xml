@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom-rules" default="help">
+
+<property name="build.num" value="0"/>
+<property name="version" value="0"/>
+<property name="build.type" value="UNKNOWN"/>
+<property name="software.type" value="DEVELOPMENT"/>
+<property name="expiry" value="DEC 31, 2999"/>
+
+<target name="help">
+	<echo>
+	Custom rules... not intended for direct use
+	</echo>
+</target>
+
+<target name="init">
+	<mkdir dir="res/values"/>
+</target>
+<target name="-pre-build" depends="init">
+	<echo message="Setting config"/>
+        <echoxml file="res/values/config.xml">
+<resources>
+    <string name="build_num">${build.num}</string>
+    <string name="version">${version}</string>
+    <string name="build_type">${build.type}</string>
+    <string name="software_type">${software.type}</string>
+    <string name="expiry">${expiry}</string>
+</resources>
+         </echoxml>
+
+</target>
+</project>
