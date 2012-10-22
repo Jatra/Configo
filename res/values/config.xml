@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="build">1</string>
+    <string name="version">1</string>
+    <string name="build_type">ECLIPSE</string>
+    <string name="software_type">DEVELOPMENT</string>
+    <string name="expiry">31 Dec, 2999</string>
+</resources>
