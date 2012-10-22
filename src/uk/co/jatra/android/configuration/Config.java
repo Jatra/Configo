@@ -69,7 +69,7 @@ public class Config {
 
     }
     
-    public Config initConfig(Context context) {
+    public static Config initConfig(Context context) {
         if (instance != null) {
             throw new IllegalStateException("Already initialised");
         } else {
